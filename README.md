@@ -22,7 +22,9 @@
 
 
 
-## Primeiros passos (CRuD):
+# MongoDB
+
+## Primeiros passos (CRuD): 
 
 [Criando uma collection e adicionando informações: ](https://www.mongodb.com/docs/manual/reference/method/db.collection.createIndex/#db.collection.createIndex)
 
@@ -60,3 +62,36 @@ Exemplo:
 `db.users.remove({age: {$gte: 23}}`)              --> remover todos com idade >= 23
 
 `db.users.deleteMany({age: {$gte: 25, $lte:44}})` --> remover todos com idade >= 25 e <= 44
+
+
+
+## Operadores básicos:
+
+
+**count()**: contar a quantidade de documentos que uma consulta irá retornar. EX: `db.NomeColeção.find({condição}, {atributos exibidos ou não}).count()`
+
+**find():** fazer consultas.  EX: `db.getCollection("products").find({ $or : [{"comida": "banana"}, {"comida": "pudim"} ] })`
+
+**$limit:** para limitar a quantidade de documentos retornados
+
+**$sort:** ordem que você quer a sua consulta → 1 = ordem crescente  ;   -1 = ordem decrescente. 
+
+**$and:** operador lógico AND
+
+**$or:** – operador lógico OR
+
+**$not:** operador lógico NOT
+
+**$gt:** maior que
+
+**$lt:** menor que
+
+**$gte:** maior ou igual
+
+**$lte:** menor ou igual
+
+**$ne:** diferente de
+
+**$in:** todos os documentos cujo atributo possui um dos valores especificados (no SQL operador IN)
+
+**$nin:** todos os documentos cujo atributo não possui um dos valores especificados (no SQL operador NOT IN)
