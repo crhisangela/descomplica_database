@@ -3,6 +3,10 @@
 
 **Database:** um modo estruturado de guardar e acessar dados armazenados
 
+# SQL
+    
+    CRIAR banco de dados: `CREATE DATABASE SUCOS`
+    APAGAR um banco de dados: `DROP DATABASE SUCOS`
 
 # NoSQL
 
