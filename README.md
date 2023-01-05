@@ -99,3 +99,6 @@ Exemplo:
 **$in:** todos os documentos cujo atributo possui um dos valores especificados (no SQL operador IN)
 
 **$nin:** todos os documentos cujo atributo não possui um dos valores especificados (no SQL operador NOT IN)
+
+
+By: **sıɥɹƆ sıɥɹƆ**
